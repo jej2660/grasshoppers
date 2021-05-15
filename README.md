@@ -10,7 +10,7 @@
 
 Help two "grass hoppers (🐸 - 🦗)" become friends, and enjoy planting the grass on your github profile. 
 
-This project includes a github-actions workflow: [GRASSHOPPERS](./actions/workflows/grasshoppers.yml), which simply commits a change to the text file: [./grass/grass.txt](./grass/grass.txt).
+This project includes a github-actions workflow: `GRASSHOPPERS`, which simply commits a change to the text file: [./grass/grass.txt](./grass/grass.txt).
 
 -at specific times, and everyday.
 
@@ -20,7 +20,7 @@ This project includes a github-actions workflow: [GRASSHOPPERS](./actions/workfl
 
 >  You can schedule a workflow to run at specific UTC times using [POSIX cron syntax](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html#tag_20_25_07). Scheduled workflows run on the latest commit on the default or base branch. The shortest interval you can run scheduled workflows is once every 5 minutes. [Reference→](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events)
 
-As described above, you can also customize its running interval of [GRASSHOPPERS](./actions/workflows/grasshoppers.yml). Edit the contents in [grasshoppers.yml](./.github/workflows/grasshoppers.yml).
+As described above, you can also customize its running interval of `GRASSHOPPERS`. Edit the contents in [grasshoppers.yml](./.github/workflows/grasshoppers.yml).
 
 ![image](https://user-images.githubusercontent.com/15683098/118365986-d6ba5b00-b5d9-11eb-852a-027fa6ca4726.png)
 
