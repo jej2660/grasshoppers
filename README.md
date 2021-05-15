@@ -34,7 +34,7 @@ As described above, you can also customize its running interval of `GRASSHOPPERS
 
    ![image](https://user-images.githubusercontent.com/15683098/118364887-4e39bb80-b5d5-11eb-9b41-c64be1b21c6a.png)
    
-3. Lines 31-32 @ [grasshoppers.yml](./.github/workflows/grasshoppers.yml), set your github id and e-mail.
+3. Lines31-32@[grasshoppers.yml](./.github/workflows/grasshoppers.yml), **set your github id and e-mail.**
   
   ![image](https://user-images.githubusercontent.com/15683098/118369837-f3f22800-b5df-11eb-8ed1-a33665f4a533.png)
    
