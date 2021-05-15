@@ -22,6 +22,8 @@ This project includes a github-actions workflow: [GRASSHOPPERS](./actions/workfl
 
 As described above, you can also customize its running interval of [GRASSHOPPERS](./actions/workflows/grasshoppers.yml). Edit the contents in [grasshoppers.yml](./.github/workflows/grasshoppers.yml).
 
+![image](https://user-images.githubusercontent.com/15683098/118365986-d6ba5b00-b5d9-11eb-852a-027fa6ca4726.png)
+
 ## Configuration Steps
 
 1. **Fork** https://github.com/binchoo/grasshoppers.
