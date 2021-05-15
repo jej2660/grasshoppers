@@ -18,13 +18,14 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       - name: a frog now starts hopping
         run: |
-          hopping_count=$(wc -l grass.txt | awk '{ print $1 }')
-          printf "\t%.0s" $(eval echo "{1..$hopping_count}") >> grass.txt
-          printf "ヾ⌒⌒🐸" >> grass.txt
+          sed -i 's/.\{4\}╮$//g' grass.txt
+          hopping_count=$(wc -l grass.txt | awk '{ print $1 }') ;
+          printf "━%.0s" $(eval echo "{1..$hopping_count}") >> grass.txt ;
+          printf "⌒🐸" >> grass.txt ;
       - name: a grasshopper meets a new friend
         run: |
-          printf "⌒⌒🦗━ ╮\n" >> grass.txt
-          cat grass.txt
+          printf "🦗⌒━ ╮\n" >> grass.txt ;
+          cat grass.txt ;
       - name: two friends hop, hop, hop.
         run: |
           git config --global user.name 'binchoo'
