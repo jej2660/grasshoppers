@@ -1,0 +1,23 @@
+name: GRASSHOPPERS
+on: 
+  schedule:
+    - cron:  '0 20 * * *'
+  workflow_dispatch:
+    
+defaults:
+  run:
+    shell: bash
+    working-directory: scripts
+    
+jobs:
+  hoppers-hop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: a frog now starts hopping
+        run: |
+          hopping_count=$(wc -l grass.txt | awk '{ print $1 }')
+          printf "\t%.0s" $(eval echo "{1..$hopping_count}") >> grass.txt
+          printf "ヾ⌒⌒🐸" >> grass.txt
+      - name: a grasshopper meets a new friend
+        run: |
+          printf "⌒⌒🦗━ ╮\n" >> grass.txt
