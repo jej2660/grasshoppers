@@ -13,6 +13,7 @@ jobs:
   hoppers-hop:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: a frog now starts hopping
         run: |
           cd ./grass
