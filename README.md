@@ -38,7 +38,11 @@ As described above, you can also customize its running interval of `GRASSHOPPERS
 
    You follow this step to test whether the workflow properly commits a change to your repository.
 
-4. **⌒⌒🐸🦗━ ╮**
+4. In [grasshoppers.yml](./.github/workflows/grasshoppers.yml) lines 31-32, set your github id and e-mail.
+  
+  ![image](https://user-images.githubusercontent.com/15683098/118369837-f3f22800-b5df-11eb-8ed1-a33665f4a533.png)
+  
+5. **⌒⌒🐸🦗━ ╮**
 
 ## Rules
 - Do not manually modify [./grass/grass.txt](./grass/grass.txt). This may interrupt the push to the remote repository.
