@@ -7,7 +7,7 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: scripts
+    working-directory: ./grass
     
 jobs:
   hoppers-hop:
@@ -16,8 +16,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: a frog now starts hopping
         run: |
-          cd ./grass
-          touch grass.txt
           hopping_count=$(wc -l grass.txt | awk '{ print $1 }')
           printf "\t%.0s" $(eval echo "{1..$hopping_count}") >> grass.txt
           printf "ヾ⌒⌒🐸" >> grass.txt
