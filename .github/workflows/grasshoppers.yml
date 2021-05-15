@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: a frog now starts hopping
         run: |
           hopping_count=$(wc -l grass.txt | awk '{ print $1 }')
@@ -23,3 +25,9 @@ jobs:
         run: |
           printf "⌒⌒🦗━ ╮\n" >> grass.txt
           cat grass.txt
+      - name: two friends hop, hop, hop.
+        run: |
+          git config --global user.name 'binchoo'
+          git config --global user.email '079111w@gmail.com'
+          git commit -am "Hop, hop, hop."
+          git push
