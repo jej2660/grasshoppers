@@ -28,7 +28,7 @@ jobs:
           cat grass.txt ;
       - name: two friends hop, hop, hop.
         run: |
-          git config --global user.name 'Your Name'
-          git config --global user.email 'your-username@users.noreply.github.com'
+          git config --global user.name 'SgOm'
+          git config --global user.email 'juj2660@naver.com'
           git commit -am "Hop, hop, hop."
           git push
